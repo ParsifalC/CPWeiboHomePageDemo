@@ -127,7 +127,7 @@
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:@""
             forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor redColor];
+    button.backgroundColor = [UIColor clearColor];
     button.contentMode = UIViewContentModeScaleToFill;
     [button addTarget:self
                action:@selector(buttonTapped:)

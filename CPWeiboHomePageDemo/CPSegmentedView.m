@@ -96,6 +96,7 @@
         [_scrollView addSubview:_containerView];
         [_containerView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.mas_equalTo(_scrollView);
+            make.width.mas_equalTo(_scrollView.mas_width).with.priority(250);
         }];
         _scrollView.showsHorizontalScrollIndicator = YES;
         _scrollView.showsVerticalScrollIndicator = NO;

@@ -42,9 +42,9 @@ static NSString * const kBaseTableViewCellIdentifier = @"UITableViewCell";
     [self scrollViewDidScroll:self.tableView];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewDidDisappear:animated];
+    [super viewWillDisappear:animated];
     [self.navigationController.navigationBar cp_reset];
 }
 
